@@ -1,0 +1,99 @@
+{
+  "type": "FeatureCollection",
+  "name": "RescueOS Emergency Response District Alpha",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "District Operational Zone",
+        "category": "boundary",
+        "type": "DISTRICT_ZONE",
+        "description": "Metropolitan Disaster Command Sector Perimeter"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.5750, 12.9500],
+            [77.6200, 12.9500],
+            [77.6200, 13.0000],
+            [77.5750, 13.0000],
+            [77.5750, 12.9500]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sector B - Riverbank Inundation Hazard Area",
+        "category": "hazard_zone",
+        "type": "FLOOD_ZONE",
+        "risk": "CRITICAL",
+        "evacuation_status": "MANDATORY_EVACUATION"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [77.5800, 12.9550],
+            [77.5920, 12.9570],
+            [77.5900, 12.9700],
+            [77.5780, 12.9680],
+            [77.5800, 12.9550]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamala River Channel",
+        "category": "waterway",
+        "type": "RIVER",
+        "flow_rate": "High Surge (Breached Embankment)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.5760, 12.9520],
+          [77.5820, 12.9600],
+          [77.5870, 12.9680],
+          [77.5930, 12.9800],
+          [77.6000, 12.9950]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Ring Arterial Evacuation Corridor",
+        "category": "evacuation_route",
+        "status": "OPEN_TRAFFIC",
+        "recommended_for": "Heavy Supply Convoy & Emergency Vehicles"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.5800, 12.9800],
+          [77.5950, 12.9820],
+          [77.6100, 12.9850],
+          [77.6180, 12.9900]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Main River Bridge (Hazard Obstruction)",
+        "category": "roadblock",
+        "status": "IMPASSABLE_SUBMERGED",
+        "notes": "Barricaded by Police Unit 09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5880, 12.9660]
+      }
+    }
+  ]
+}
